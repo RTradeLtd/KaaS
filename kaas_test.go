@@ -11,7 +11,7 @@ import (
 )
 
 const (
-	testCfgPath = "../../testenv/config.json"
+	testCfgPath = "testenv/config.json"
 	testKeyName = "testkey"
 )
 
