@@ -34,6 +34,19 @@
   version = "v1.0.0"
 
 [[projects]]
+  digest = "1:a962710334791d701b986e3c773c28fef5c0d9fb9ac7f91f481380fde33d6bd7"
+  name = "github.com/RTradeLtd/go-ipfs-api"
+  packages = [
+    "gxlibs/github.com/libp2p/go-libp2p-crypto",
+    "gxlibs/github.com/libp2p/go-libp2p-crypto/pb",
+    "gxlibs/golang.org/x/crypto/ed25519",
+    "gxlibs/golang.org/x/crypto/ed25519/internal/edwards25519",
+  ]
+  pruneopts = "UT"
+  revision = "be80647e8f3401950dbabbeddef797435db5848f"
+  version = "v2.0.0rc1-u"
+
+[[projects]]
   digest = "1:22730dac2d90b04cf4ac163dc06ab90a8e75cead57bcd3e4c80f8fac7ad8461f"
   name = "github.com/RTradeLtd/grpc"
   packages = [
@@ -46,24 +59,12 @@
   version = "v1.0.6"
 
 [[projects]]
-  digest = "1:c6a71244d012bfe0b0d383c62bde6679aa7dc26e62f548dfc6bee11a9bd2575c"
+  branch = "ungx-clean"
+  digest = "1:880d9fc463092b3377dd7c32502858dd0dc05dc0f642643742598b92cbe74b5a"
   name = "github.com/RTradeLtd/rtfs"
   packages = ["krab"]
   pruneopts = "UT"
-  revision = "94f0159b7478db1207109fe8e0ca9cd4322b62a7"
-  version = "v0.3.5"
-
-[[projects]]
-  branch = "master"
-  digest = "1:4cf11742b199ab3aacf26b00187e72f7ff8ba2145f363b74f295d54f098f79e4"
-  name = "github.com/agl/ed25519"
-  packages = [
-    ".",
-    "edwards25519",
-    "extra25519",
-  ]
-  pruneopts = "UT"
-  revision = "5312a61534124124185d41f09206b9fef1d88403"
+  revision = "8ce4415a0a1fb23e685b1fc09b8acef7fb1bd9fb"
 
 [[projects]]
   branch = "master"
@@ -163,17 +164,6 @@
   packages = ["."]
   pruneopts = "UT"
   revision = "b497e2f366b8624394fb2e89c10ab607bebdde0b"
-
-[[projects]]
-  digest = "1:4ff86c6d6dd8df23a58e6b6060fea5f150d1a502cdfe8a3e9efd5d25339196c6"
-  name = "github.com/libp2p/go-libp2p-crypto"
-  packages = [
-    ".",
-    "pb",
-  ]
-  pruneopts = "UT"
-  revision = "274de1bb6c27780863df6b230c91324ab481dab2"
-  version = "v2.0.1"
 
 [[projects]]
   branch = "master"
@@ -300,7 +290,6 @@
     "github.com/RTradeLtd/rtfs/krab",
     "github.com/grpc-ecosystem/go-grpc-middleware",
     "github.com/grpc-ecosystem/go-grpc-middleware/tags",
-    "github.com/libp2p/go-libp2p-crypto",
     "google.golang.org/grpc",
     "google.golang.org/grpc/credentials",
   ]
