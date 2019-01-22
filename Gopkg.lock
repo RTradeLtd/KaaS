@@ -47,7 +47,7 @@
   version = "v2.0.0rc1-u"
 
 [[projects]]
-  digest = "1:22730dac2d90b04cf4ac163dc06ab90a8e75cead57bcd3e4c80f8fac7ad8461f"
+  digest = "1:2fb7f05da325a30ac736f239d56b0ff4d5952a18026de80cce68e12a75f3ad53"
   name = "github.com/RTradeLtd/grpc"
   packages = [
     "dialer",
@@ -55,8 +55,8 @@
     "middleware",
   ]
   pruneopts = "UT"
-  revision = "f3d3b84b0af8d646d68b11043f77599b0fbf785b"
-  version = "v1.0.6"
+  revision = "f632698b9168b58eb55c22a8adf72d53d7a36185"
+  version = "v1.4.0"
 
 [[projects]]
   branch = "ungx-clean"
@@ -284,6 +284,7 @@
   analyzer-version = 1
   input-imports = [
     "github.com/RTradeLtd/config",
+    "github.com/RTradeLtd/go-ipfs-api/gxlibs/github.com/libp2p/go-libp2p-crypto",
     "github.com/RTradeLtd/grpc/dialer",
     "github.com/RTradeLtd/grpc/krab",
     "github.com/RTradeLtd/grpc/middleware",

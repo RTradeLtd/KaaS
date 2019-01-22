@@ -6,7 +6,7 @@ ignored = ["github.com/libp2p/go-libp2p-crypto"]
 
 [[constraint]]
   name = "github.com/RTradeLtd/grpc"
-  version = "1.0.6"
+  version = "=v1.4.0"
 
 [[constraint]]
   name = "github.com/RTradeLtd/rtfs"
