@@ -47,7 +47,8 @@
   version = "v2.0.0rc1-u"
 
 [[projects]]
-  digest = "1:2fb7f05da325a30ac736f239d56b0ff4d5952a18026de80cce68e12a75f3ad53"
+  branch = "krab/delete"
+  digest = "1:d07d1c0b0d209c037c91898d3e185823b19a30356f5229661f79711d5d8fe839"
   name = "github.com/RTradeLtd/grpc"
   packages = [
     "dialer",
@@ -55,16 +56,15 @@
     "middleware",
   ]
   pruneopts = "UT"
-  revision = "f632698b9168b58eb55c22a8adf72d53d7a36185"
-  version = "v1.4.0"
+  revision = "a519739e3fc405ee5804cb102e1b929fadefa720"
 
 [[projects]]
-  branch = "ungx-clean"
-  digest = "1:880d9fc463092b3377dd7c32502858dd0dc05dc0f642643742598b92cbe74b5a"
+  branch = "master"
+  digest = "1:c6a71244d012bfe0b0d383c62bde6679aa7dc26e62f548dfc6bee11a9bd2575c"
   name = "github.com/RTradeLtd/rtfs"
   packages = ["krab"]
   pruneopts = "UT"
-  revision = "8ce4415a0a1fb23e685b1fc09b8acef7fb1bd9fb"
+  revision = "594e1e8cacd361730b9b5b9ed2b2621c0b9da1a9"
 
 [[projects]]
   branch = "master"

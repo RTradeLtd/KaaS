@@ -14,7 +14,7 @@ import (
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	ci "github.com/RTradeLtd/go-ipfs-api/gxlibs/github.com/libp2p/go-libp2p-crypto"
+	ci "github.com/libp2p/go-libp2p-crypto"
 )
 
 // Server is the backend for Krab
@@ -100,6 +100,16 @@ func (s *Server) PutPrivateKey(ctx context.Context, req *pb.KeyPut) (*pb.Respons
 	}
 	return &pb.Response{
 		Status: "private key stored",
+	}, nil
+}
+
+// DeletePrivateKey is used to remove a private key from the keystore
+func (s *Server) DeletePrivateKey(ctx context.Context, req *pb.KeyDelete) (*pb.Response, error) {
+	if err := s.krab.Delete(req.Name); err != nil {
+		return nil, err
+	}
+	return &pb.Response{
+		Status: "private key deleted",
 	}, nil
 }
 

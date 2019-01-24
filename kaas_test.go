@@ -75,4 +75,9 @@ func TestKrab(t *testing.T) {
 			t.Fatal("failed to recover correct private key")
 		}
 	}
+	if resp, err := client.ServiceClient.DeletePrivateKey(context.Background(), &pb.KeyDelete{Name: testKeyName}); err != nil {
+		t.Fatal(err)
+	} else if resp.Status != "private key deleted" {
+		t.Fatal("failed to delete private key")
+	}
 }

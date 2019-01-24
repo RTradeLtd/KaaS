@@ -6,11 +6,15 @@ ignored = ["github.com/libp2p/go-libp2p-crypto"]
 
 [[constraint]]
   name = "github.com/RTradeLtd/grpc"
-  version = "=v1.4.0"
+  branch = "krab/delete"
 
 [[constraint]]
+  name = "github.com/RTrade/krab"
+  branch = "prod-prep"
+  
+[[constraint]]
   name = "github.com/RTradeLtd/rtfs"
-  branch = "ungx-clean"
+  branch = "master"
 
 [[constraint]]
   name = "github.com/grpc-ecosystem/go-grpc-middleware"
