@@ -27,7 +27,7 @@ func TestKrab(t *testing.T) {
 		}
 	}()
 	// create our client to connect to the server
-	client, err := kaas.NewClient(cfg.Endpoints)
+	client, err := kaas.NewClient(cfg.Services)
 	if err != nil {
 		t.Fatal(err)
 	}
