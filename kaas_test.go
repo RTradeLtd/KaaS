@@ -27,7 +27,7 @@ func TestKrab(t *testing.T) {
 		}
 	}()
 	// create our client to connect to the server
-	client, err := kaas.NewClient(cfg.Endpoints)
+	client, err := kaas.NewClient(cfg.Services)
 	if err != nil {
 		t.Fatal(err)
 	}
@@ -74,5 +74,10 @@ func TestKrab(t *testing.T) {
 		if ok := pk.Equals(pk2); !ok {
 			t.Fatal("failed to recover correct private key")
 		}
+	}
+	if resp, err := client.ServiceClient.DeletePrivateKey(context.Background(), &pb.KeyDelete{Name: testKeyName}); err != nil {
+		t.Fatal(err)
+	} else if resp.Status != "private key deleted" {
+		t.Fatal("failed to delete private key")
 	}
 }
