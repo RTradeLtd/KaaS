@@ -3,11 +3,12 @@ package kaas
 import (
 	"fmt"
 
-	"github.com/RTradeLtd/config"
-	"github.com/RTradeLtd/grpc/dialer"
-	pb "github.com/RTradeLtd/grpc/krab"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
+
+	"github.com/RTradeLtd/config/v2"
+	"github.com/RTradeLtd/grpc/dialer"
+	pb "github.com/RTradeLtd/grpc/krab"
 )
 
 // Client is how we interface with the kaas grpc key manager

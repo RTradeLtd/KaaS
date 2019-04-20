@@ -4,10 +4,11 @@ import (
 	"context"
 	"testing"
 
-	"github.com/RTradeLtd/config"
-	pb "github.com/RTradeLtd/grpc/krab"
-	"github.com/RTradeLtd/kaas"
 	ci "github.com/libp2p/go-libp2p-crypto"
+
+	"github.com/RTradeLtd/config/v2"
+	pb "github.com/RTradeLtd/grpc/krab"
+	"github.com/RTradeLtd/kaas/v2"
 )
 
 const (
