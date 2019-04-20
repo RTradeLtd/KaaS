@@ -5,16 +5,16 @@ import (
 	"log"
 	"net"
 
-	"github.com/RTradeLtd/config"
-	pb "github.com/RTradeLtd/grpc/krab"
-	"github.com/RTradeLtd/grpc/middleware"
-	"github.com/RTradeLtd/rtfs/krab"
-	"github.com/grpc-ecosystem/go-grpc-middleware"
+	"github.com/RTradeLtd/rtfs/v2/krab"
+	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	grpc_ctxtags "github.com/grpc-ecosystem/go-grpc-middleware/tags"
+	ci "github.com/libp2p/go-libp2p-crypto"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials"
 
-	ci "github.com/libp2p/go-libp2p-crypto"
+	"github.com/RTradeLtd/config/v2"
+	pb "github.com/RTradeLtd/grpc/krab"
+	"github.com/RTradeLtd/grpc/middleware"
 )
 
 // Server is the backend for Krab
