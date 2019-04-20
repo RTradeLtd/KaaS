@@ -1,4 +1,4 @@
-module github.com/RTradeLtd/kaas
+module github.com/RTradeLtd/kaas/v2
 
 go 1.12
 
