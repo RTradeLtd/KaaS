@@ -6,7 +6,7 @@ require (
 	cloud.google.com/go v0.37.4 // indirect
 	github.com/DataDog/zstd v1.4.0 // indirect
 	github.com/RTradeLtd/config/v2 v2.1.1
-	github.com/RTradeLtd/grpc v2.0.0+incompatible
+	github.com/RTradeLtd/grpc v0.0.0-20190528193535-5184ecc77228
 	github.com/RTradeLtd/rtfs/v2 v2.1.0
 	github.com/Shopify/sarama v1.22.0 // indirect
 	github.com/beorn7/perks v1.0.0 // indirect
