@@ -117,6 +117,18 @@ func (s *Server) DeletePrivateKey(ctx context.Context, req *pb.KeyDelete) (*pb.R
 	}, nil
 }
 
+// ListPrivateKeys is used to return a list of private key ID's of all keys in our keystore
+func (s *Server) ListPrivateKeys(ctx context.Context, req *pb.KeyList) (*pb.Response, error) {
+	keyIDs, err := s.krab.List()
+	if err != nil {
+		return nil, err
+	}
+	return &pb.Response{
+		Status: "keys fetched",
+		KeyIDs: keyIDs,
+	}, nil
+}
+
 // Close is used to gracefully stop any grpc connections, followed by closing the datastore
 func (s *Server) close() error {
 	// gracefull store any pending connections first
