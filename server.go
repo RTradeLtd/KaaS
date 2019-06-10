@@ -5,7 +5,7 @@ import (
 	"log"
 	"net"
 
-	"github.com/RTradeLtd/rtfs/v2/krab"
+	"github.com/RTradeLtd/krab"
 	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	grpc_ctxtags "github.com/grpc-ecosystem/go-grpc-middleware/tags"
 	ci "github.com/libp2p/go-libp2p-crypto"
