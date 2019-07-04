@@ -15,6 +15,7 @@ github.com/RTradeLtd/go-ds-bbolt v0.0.2 h1:CR/Z5RudOBYqQaL1VZ8ocb2sYwdqg/hJ61thw
 github.com/RTradeLtd/go-ds-bbolt v0.0.2/go.mod h1:Eovtvz74c8PD+5a24yo0s1jXZMDfdDAz5bBdeprV470=
 github.com/RTradeLtd/grpc v0.0.0-20190528193535-5184ecc77228 h1:5dTh6W++5HbZAuykM1PT81EIST4p8m5Et+jQTSZ6L2s=
 github.com/RTradeLtd/grpc v0.0.0-20190528193535-5184ecc77228/go.mod h1:1+2Dnmd+g26sFHF7sJhV5aIpJKZVwGUAnoRQ5EewR1k=
+github.com/RTradeLtd/kaas v2.0.1+incompatible h1:3arHNJzc93AbK1GqYrbzOskCIpTpnGs0jtrqYD54VLI=
 github.com/RTradeLtd/krab v0.0.0-20190628230534-6e628480e3a4 h1:AomKvIPw/SCeBa/cy8O3VWTV53Pi5YKRwLgDixqiI/s=
 github.com/RTradeLtd/krab v0.0.0-20190628230534-6e628480e3a4/go.mod h1:Pe4LCcODU3/9caP4GdoY4Iw2yAL0zCKkCll6KW6ZmD4=
 github.com/aead/siphash v1.0.1/go.mod h1:Nywa3cDsYNNK3gaciGTWPwHt0wlpNV15vwmswBAUSII=

@@ -1,4 +1,4 @@
-module github.com/RTradeLtd/kaas/v2
+module github.com/RTradeLtd/kaas/v3
 
 go 1.12
 
@@ -10,6 +10,7 @@ require (
 	github.com/grpc-ecosystem/go-grpc-middleware v1.0.0
 	github.com/ipfs/go-datastore v0.0.5
 	github.com/libp2p/go-libp2p-crypto v0.1.0
+	google.golang.org/appengine v1.4.0 // indirect
 	google.golang.org/genproto v0.0.0-20190418145605-e7d98fc518a7 // indirect
 	google.golang.org/grpc v1.20.1
 )
