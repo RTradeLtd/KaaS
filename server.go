@@ -15,18 +15,20 @@ import (
 	"github.com/RTradeLtd/config/v2"
 	pb "github.com/RTradeLtd/grpc/krab"
 	"github.com/RTradeLtd/grpc/middleware"
+	"github.com/ipfs/go-datastore"
 )
 
 // Server is the backend for Krab
 type Server struct {
-	krab   *krab.Krab
+	krab   *krab.Keystore
+	ds     datastore.Batching
 	server *grpc.Server
 	pb.ServiceServer
 }
 
 // NewServer is used to create, and run a krab keystore server
-func NewServer(listenAddr, protocol string, cfg *config.TemporalConfig) error {
-	lis, err := net.Listen(protocol, listenAddr)
+func NewServer(cfg *config.TemporalConfig, ds datastore.Batching) error {
+	lis, err := net.Listen("tcp", cfg.Services.Krab.URL)
 	if err != nil {
 		return err
 	}
@@ -55,17 +57,14 @@ func NewServer(listenAddr, protocol string, cfg *config.TemporalConfig) error {
 	// create grpc server
 	gServer := grpc.NewServer(serverOpts...)
 	// setup krab backend
-	kb, err := krab.NewKrab(krab.Opts{
-		Passphrase: cfg.Services.Krab.KeystorePassword,
-		DSPath:     cfg.IPFS.KeystorePath,
-		ReadOnly:   false},
-	)
+	kb, err := krab.NewKeystore(ds, cfg.Services.Krab.KeystorePassword)
 	if err != nil {
 		return err
 	}
 	server := &Server{
 		krab:   kb,
 		server: gServer,
+		ds:     ds,
 	}
 	pb.RegisterServiceServer(gServer, server)
 	// defer closing of all services
@@ -134,5 +133,5 @@ func (s *Server) close() error {
 	// gracefull store any pending connections first
 	s.server.GracefulStop()
 	// now close the datastore
-	return s.krab.Close()
+	return s.ds.Close()
 }

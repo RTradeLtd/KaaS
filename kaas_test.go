@@ -8,7 +8,9 @@ import (
 
 	"github.com/RTradeLtd/config/v2"
 	pb "github.com/RTradeLtd/grpc/krab"
-	"github.com/RTradeLtd/kaas/v2"
+	"github.com/RTradeLtd/kaas/v3"
+	ds "github.com/ipfs/go-datastore"
+	dssync "github.com/ipfs/go-datastore/sync"
 )
 
 const (
@@ -23,7 +25,7 @@ func TestKrab(t *testing.T) {
 	}
 	// create our server, and listen for connections
 	go func() {
-		if err := kaas.NewServer(cfg.Krab.URL, "tcp", cfg); err != nil {
+		if err := kaas.NewServer(cfg, dssync.MutexWrap(ds.NewMapDatastore())); err != nil {
 			t.Fatal(err)
 		}
 	}()
