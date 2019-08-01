@@ -6,3 +6,7 @@
 have multiple readers and writers for ipfs keystores. Due to the usage of badger,
 we can only have a single process that serves as a reader+writer, or multiple
 processes performing read-only tasks. 
+
+## Multi-Language
+
+[![](https://img.shields.io/badge/Lang-English-blue.svg)](README.md)  [![jaywcjlove/sb](https://jaywcjlove.github.io/sb/lang/chinese.svg)](README-zh.md)
