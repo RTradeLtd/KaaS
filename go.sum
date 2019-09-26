@@ -7,6 +7,8 @@ github.com/RTradeLtd/config v2.0.5+incompatible h1:qShcZtJqSBT2MIM7WcD+IRSJhGdJD
 github.com/RTradeLtd/config v2.0.5+incompatible/go.mod h1:FVv/bU49cFXT3MRNrPe1VztMBxHQW6MS/DHWqtxNiRc=
 github.com/RTradeLtd/config/v2 v2.1.1 h1:6jhXT+p/0Py14QAV/5Y15E5ggAB4RLNZGVw3D5IEius=
 github.com/RTradeLtd/config/v2 v2.1.1/go.mod h1:juSzxBr84ZeNera4QtOZ7khT9AAtqvyPPn/rx2dgzp4=
+github.com/RTradeLtd/config/v2 v2.1.5 h1:5RqXYZJNufmsHk9tL1I2wyQHxkgc/fdXjyamoegTI4A=
+github.com/RTradeLtd/config/v2 v2.1.5/go.mod h1:juSzxBr84ZeNera4QtOZ7khT9AAtqvyPPn/rx2dgzp4=
 github.com/RTradeLtd/crypto/v2 v2.1.1 h1:P59zYkkNkl6K1KiTRvW52AYwLvwmtzuzZ9+AjLWmKsU=
 github.com/RTradeLtd/crypto/v2 v2.1.1/go.mod h1:saIQ67Btn4JWsOdzjn9U6Dl+aZlg+YKgg4RsQKXxjf4=
 github.com/RTradeLtd/entropy-mnemonics v0.0.0-20170316012907-7b01a644a636 h1:i/+1LBA+YMfD1m9UnQP52A7S6y2U3C0xpMBehPkDRug=
