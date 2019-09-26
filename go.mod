@@ -8,7 +8,7 @@ require (
 	github.com/RTradeLtd/grpc v0.0.0-20190528193535-5184ecc77228
 	github.com/RTradeLtd/krab v0.0.0-20190628230534-6e628480e3a4
 	github.com/grpc-ecosystem/go-grpc-middleware v1.1.0
-	github.com/ipfs/go-datastore v0.0.5
+	github.com/ipfs/go-datastore v0.1.0
 	github.com/libp2p/go-libp2p-crypto v0.1.0
 	google.golang.org/appengine v1.4.0 // indirect
 	google.golang.org/genproto v0.0.0-20190418145605-e7d98fc518a7 // indirect
