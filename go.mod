@@ -12,5 +12,5 @@ require (
 	github.com/libp2p/go-libp2p-crypto v0.1.0
 	google.golang.org/appengine v1.4.0 // indirect
 	google.golang.org/genproto v0.0.0-20190418145605-e7d98fc518a7 // indirect
-	google.golang.org/grpc v1.20.1
+	google.golang.org/grpc v1.24.0
 )
